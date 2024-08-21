@@ -16,24 +16,84 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .bg {
+            background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+        }
     </style>
     <!-- icon cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></script>
 </head>
 
 <body class="font-manrope ">
-    <header>
+    <header class="container mx-auto bg">
+        <!-- navbar -->
+        <nav class="mt-5">
 
+            <div class="navbar bg-base-100">
+
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-3xl font-extrabold"><i
+                            class=" text-lg fa-solid fa-arrow-right bg-[#ABEF5F] text-black p-2 -rotate-45 rounded-full h-5 w-5 "></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-[#737373]">
+                        <li class="text-black"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <!-- icon -->
+                    <div class="space-x-4 hidden md:flex items-center">
+                        <a href=""><i class=" bg-white p-2 rounded-full fa-solid fa-magnifying-glass"></i></a>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="btn rounded-full bg-[#ABEF5F] font-extrabold text-lg">Book Consult
+                            <i
+                                class="bg-black p-2 rounded-full h-5 w-5  fa-solid fa-arrow-right text-white text-sm -rotate-45 "></i></a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="text-black"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            </div>
+        </nav>
+        
+        <!-- banner -->
+        <div>
+            <div>
+                <img src="assets/banner.png" alt="">
+            </div>
+            <div>
+                <h1>A barn house of this design has a striking appearance</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+        </div>
     </header>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
 
 </html>
