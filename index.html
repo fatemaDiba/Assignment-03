@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3 Document</title>
-    <!-- tailwind -->
+    <!-- tailwind & daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="w-11/12 container mx-auto mb-20">
+    <header class="lg:w-10/12 w-11/12 container mx-auto mb-20 ">
         <!-- Navbar -->
         <div class="flex items-center justify-between my-14">
             <!-- nav-start -->
@@ -80,8 +81,8 @@
 
     <main class=" bg-[#F4F4F4]">
         <!--Spaces design section-->
-        <section class="lg:flex items-center justify-between w-11/12 
-        container mx-auto mb-16 py-[6rem]">
+        <section class="lg:flex items-center justify-between lg:w-10/12 w-11/12
+        container mx-auto md:mb-16 mb-4 py-[6rem]">
             <div class="lg:w-[45%] space-y-7 relative mb-6">
                 <!-- text -->
                 <div class="space-y-6 text-center lg:text-left">
@@ -133,7 +134,7 @@
         </section>
 
         <!-- user count section -->
-        <section class="w-11/12 container mx-auto mb-24">
+        <section class="lg:w-10/12 w-11/12 container mx-auto md:mb-24 mb-14">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white rounded-2xl p-7 text-center gap-10">
                 <div class="lg:space-y-2 space-y-1 ">
                     <span><i class="fa-solid fa-message text-xl text-[#737373] mr-3"></i></span>
@@ -159,7 +160,7 @@
         </section>
 
         <!-- we work section -->
-        <section class="w-11/12 container mx-auto mb-24 py-7">
+        <section class="lg:w-10/12 w-11/12 container mx-auto md:mb-24 mb:14 py-7">
             <div>
                 <!-- text -->
                 <div class="text-center space-y-5 mb-7">
@@ -215,7 +216,7 @@
 
         <!-- latest portfolio section -->
         <section class="lg:bg-white ">
-            <div class="w-11/12 container mx-auto mb-24 py-20">
+            <div class="lg:w-10/12 w-11/12 container mx-auto mb-5 md:mb-24 py-20">
                 <!-- text -->
                 <div class=" text-center space-y-9 mb-9">
                     <a href=""
@@ -295,9 +296,126 @@
                 </div>
         </section>
 
+        <!-- unique section  -->
+        <section>
+            <div class="md:w-10/12 w-11/12 container mx-auto mb-20">
+                <div class="text-center md:mb-24 mb-7">
+                    <h2 class="md:text-4xl text-3xl text-black font-extrabold mb-5">Choose Your Home Design </h2>
+                    <p class="lg:w-9/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="flex md:flex-row flex-col justify-between  gap-6 ">
+                    <!-- card -->
+                    <div class="md:w-[45%] mb-14">
+                        <!-- daisy card -->
+                        <div class="carousel w-full mb-5">
+                            <div id="slide1" class="carousel-item relative w-full">
+                                <img src="assets/article1.png" class="w-full" />
+                                <div
+                                    class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide4" class="btn btn-circle">❮</a>
+                                    <a href="#slide2" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide2" class="carousel-item relative w-full">
+                                <img src="assets/article2.png" class="w-full" />
+                                <div
+                                    class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide1" class="btn btn-circle">❮</a>
+                                    <a href="#slide3" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide3" class="carousel-item relative w-full">
+                                <img src="assets/article3.png" class="w-full" />
+                                <div
+                                    class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide2" class="btn btn-circle">❮</a>
+                                    <a href="#slide4" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <div>
+                            <div class="flex gap-5 mb-5">
+                                <p class="text-[#737373]"><i
+                                        class="fa-regular fa-calendar-days text-gray-400 mr-2"></i>July14, 2024</p>
+                                <p class="text-[#737373]"><i
+                                        class="fa-regular fa-circle-user  text-gray-400 mr-2"></i>By Admin</p>
+                            </div>
+                            <div class="space-y-3">
+                                <h3 class="text-xl text-[#494949] font-extrabold">How to choose the furniture right of
+                                    your home.</h3>
+                                <p class="text-[#737373] md:w-10/12">The barn house captivates with its blend of rustic
+                                    charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
+                                <a href="" class="flex items-center gap-2 text-base text-[#212121] font-extrabold">Read
+                                    More<i
+                                        class="fa-solid fa-arrow-right text-lg text-black -rotate-45 bg-[#ABEF5F] p-2 h-4 w-4 rounded-full"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- qsn -->
+                    <div class="md:w-[45%] ">
+                        <div class="md:text-left text-center ml-5">
+                            <h2 class="text-3xl text-[#494949] font-extrabold mb-7 ">Common Queries</h2>
+                        </div>
+                        <!-- qsn -->
+                        <div class="mb-8">
+                            <div class="collapse collapse-arrow bg-white mb-3 text-[#494949]">
+                                <input type="radio" name="my-accordion-2" checked="checked" />
+                                <div class="collapse-title text-lg font-medium ">What is sustainable building design?
+                                </div>
+                                <div class="collapse-content">
+                                    <p class="text-sm">Sustainable design focuses on reducing environmental impact
+                                        through energy
+                                        efficiency, using eco-friendly materials, and minimizing waste.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-arrow bg-white mb-3 text-[#494949]">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-lg font-medium ">How do you choose the right house
+                                    design
+                                    company?
+                                </div>
+                                <div class="collapse-content">
+                                    <p class="text-sm">Consider their portfolio, client reviews, experience, style
+                                        compatibility, and
+                                        whether they understand your vision and budget.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-arrow bg-white text-[#494949]">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-lg font-medium ">What is a green roof, and what are its
+                                    benefits?
+                                </div>
+                                <div class="collapse-content">
+                                    <p class="text-sm">A green roof is covered with vegetation, providing insulation,
+                                        reducing
+                                        stormwater runoff, improving air quality, and offering space for urban
+                                        agriculture or recreation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- rating -->
+                        <div class="md:text-right text-center mr-5">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class=" mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--connect form section -->
         <section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover">
-            <div class="w-11/12 container mx-auto py-14">
+            <div class="lg:w-10/12 w-11/12 container mx-auto py-14">
                 <!-- text -->
                 <div class="text-center space-y-5 mb-7">
                     <a href=""
@@ -332,11 +450,10 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-[#1C1C1C]">
-        <div class="w-11/12 container mx-auto py-16">
+        <div class="lg:w-10/12 w-11/12 container mx-auto py-16">
             <!-- text -->
             <div class="text-center space-y-5 mb-12">
                 <a href="" class="text-3xl  font-extrabold text-[#E9E9E9]"><i
